@@ -1,0 +1,38 @@
+p{
+    color: aqua;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+h2{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+span{
+    font-size: larger;
+}
+
+a{color: black
+    ;}
+
+    span{
+        background-color: aquamarine;
+        margin: 40px;
+        padding: 10px;
+        border-color: brown;
+        border-width: 1px;
+        border-style: solid;
+    }
+
+#specialdiv{
+    background-color: blueviolet;
+    width: 100px;
+    height: 80px;
+    padding: 10px;
+    border: yellowgreen 10px dotted;
+    margin-bottom: 200px;
+    margin-top: 500px;
+}
