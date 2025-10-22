@@ -1,7 +1,9 @@
 # Chelsey's project#
 ### Hello!!!!👋
 * Here are my projects in this semester so far
-* ENJOY🔥
+
+**ENJOY🔥🔥🔥**
+
 ![Chelsey is watching u](One-Day-in-Costa-Rica/Photos/Butterfly.jpeg)
 
 1. [Making Money💰](Tutorial)
