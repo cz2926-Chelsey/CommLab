@@ -1,0 +1,238 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.main { 
+    position: relative; 
+    color: black;
+    text-align: center;
+    height: 20vh;
+    width: 100%;
+} 
+.bar{
+    position: absolute; 
+    left: 0; right: 0; 
+    top: 0;
+    background-color: rgb(170, 232, 243);
+    padding: 3px 0; 
+    
+}
+.bartwo{
+    position: relative;
+    height: 64px;
+    margin: 0 auto;
+    max-width: 1100px;
+    padding:0 45px;
+}
+.logo{
+    position: absolute;
+    left: 0; 
+    top: 0;
+    text-align: left;
+    line-height: 23px;
+    color: black;
+}
+.logo a{
+    text-decoration: none;
+}
+.logo .visit{
+    font-size: 14px;
+    font-weight: 400;
+    color: black;
+}
+.logo b{
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: black;
+}
+.menu{
+    text-align: center;
+    line-height: 64px;
+    margin: 0 120px 0 160px; /* top right bottom left*/
+}
+.menu span{
+    display: inline-block;
+    margin: 0 47px;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.tools{
+    position: absolute;
+    right: 0;
+    top: 0;
+    line-height: 64px;
+    text-align: right;
+}
+.lang{
+    margin-right: 30px;
+}
+.chatbot{
+    position: fixed;
+    bottom: 27px;
+    right: 20px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: transparent;
+    z-index: 9999;
+}
+.chatbot img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.chatbox{
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    background-color: white;
+    color: black;
+    padding: 14px 10px;
+    border: 1px;
+    border-style: solid;
+    border-color: lightgray;
+    border-radius: 12px;
+    font-size: 13px;
+    width: 220px;
+    line-height: 1.4;
+    font-weight: 600;
+    text-align: center;
+}
+.chatbox .Hello{
+    display: block;
+}
+.chatbox .truth{
+    display: none; 
+    text-decoration: none;
+}
+.chatbox:hover .Hello,
+.chatbox:focus .truth{
+    display: none;
+}
+.chatbox:hover .truth,
+.chatbox:focus .truth{
+    display: block;
+}
+.museum{
+    background: #ffffff;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.museum-title{
+    display: inline-block;
+    background-color: white;
+    padding: 14px 24px;
+    border-radius: 6px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    margin: 0 0 12px;
+    font-size: 28px; 
+    line-height: 1.1;
+}
+.museum-wrap{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.museum-title{
+    font-size: 40px;        
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.museum-intro{
+    display: block;
+    font-size: 18px;
+    padding: 4px 10px;
+    margin: 20px 0 8px 8px; 
+    line-height: 1;
+    color: rgb(250, 247, 247); 
+    background-color: rgb(27, 28, 28);
+    width: 0 0 24px;
+}
+.wall{
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap; /* won't change line*/
+    padding: 20px;
+    box-sizing: border-box;
+    -webkit-overflow-scrolling: touch;
+}
+.wall::-webkit-scrollbar{ 
+    height: 10px; 
+}
+.wall::-webkit-scrollbar-thumb{ 
+    background: rgba(0,0,0,0.25); 
+    border-radius: 6px; 
+}
+.card{
+    display: inline-block;
+    vertical-align: top;
+    width: 560px;           
+    box-sizing: border-box;
+    text-align: left;
+    cursor: pointer;
+}
+.card.single{
+    display: block;
+    width: 700px;
+    margin: 0 auto;         
+}
+.frame{
+    position: relative;
+    width: 430px;
+    height: 420px;
+    overflow: hidden;
+    background: #fff;
+    border: 12px solid #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.frame img,
+.frame .truth{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.frame .back{ 
+    display: none; 
+}
+.card:hover .front{ 
+    display: none; 
+}
+.card:hover .back{ 
+    display: block; 
+}
+.truth{
+    display: none;            
+    background: #ffffff;
+    color: #000;   
+    text-align: center;
+    border: 1px dashed #999;   
+}
+.truth-inner{
+    padding: 60px 20px; 
+    line-height: 1.4;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+.card.single:hover .front{ 
+    display: none; 
+}
+.card.single:hover .truth{ 
+    display: block; 
+}
+.caption {
+    margin: 12px 0 0;
+    font-size: 15px;
+    line-height: 1.4;
+    color: #333;
+    letter-spacing: 0.2px;
+    text-align: center;
+}
+

@@ -1,0 +1,258 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.main { 
+    position: relative; 
+    color: black;
+    text-align: center;
+    height: 20vh;
+    width: 100%;
+} 
+.bar{
+    position: absolute; 
+    left: 0; right: 0; 
+    top: 0;
+    background-color: rgb(170, 232, 243);
+    padding: 3px 0; 
+    
+}
+.bartwo{
+    position: relative;
+    height: 64px;
+    margin: 0 auto;
+    max-width: 1100px;
+    padding:0 45px;
+}
+.logo{
+    position: absolute;
+    left: 0; 
+    top: 0;
+    text-align: left;
+    line-height: 23px;
+    color: black;
+}
+.logo a{
+    text-decoration: none;
+}
+.logo .visit{
+    font-size: 14px;
+    font-weight: 400;
+    color: black;
+}
+.logo b{
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: black;
+}
+.menu{
+    text-align: center;
+    line-height: 64px;
+    margin: 0 120px 0 160px; /* top right bottom left*/
+}
+.menu span{
+    display: inline-block;
+    margin: 0 47px;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.tools{
+    position: absolute;
+    right: 0;
+    top: 0;
+    line-height: 64px;
+    text-align: right;
+}
+.lang{
+    margin-right: 30px;
+}
+.chatbot{
+    position: fixed;
+    bottom: 27px;
+    right: 20px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: transparent;
+    z-index: 9999;
+}
+.chatbot img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.chatbox{
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    background-color: white;
+    color: black;
+    padding: 14px 10px;
+    border: 1px;
+    border-style: solid;
+    border-color: lightgray;
+    border-radius: 12px;
+    font-size: 13px;
+    width: 220px;
+    line-height: 1.4;
+    font-weight: 600;
+    text-align: center;
+}
+.wrap{ 
+    width:900px; margin:120px auto 80px;
+}
+.post{
+    background:#fff; 
+    border:1px solid #e5e5e5; 
+    border-radius:12px; 
+    padding:18px; 
+}
+.title { 
+    display: block;
+    position: absolute;
+    top: 120px;
+    padding: 10px 18px;
+    font-size:42px; 
+    font-weight:900; 
+    margin:18px auto; 
+    letter-spacing:1px; 
+    text-transform:uppercase; 
+    max-width: 900px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    z-index: 999;
+}
+.post-head{ 
+    position:relative; 
+}
+.avatar{ 
+    width:40px; 
+    height:40px; 
+    border-radius:50%; 
+    display:inline-block; 
+    vertical-align:top; 
+}
+.up{ 
+    display:inline-block; 
+    vertical-align:top; 
+    margin-left:10px; 
+}
+.name{ 
+    font-weight:800; 
+}
+.time{
+    color:#888; 
+    font-size:12px; 
+    margin-top:2px; 
+}
+.business{ 
+    position:absolute; 
+    right:0; top:0; 
+}
+.money{ 
+    display:none; 
+    background:#111; 
+    color:#fff; 
+    padding:5px 8px; 
+    border-radius:8px; 
+    font-size:12px; 
+}
+.post-head:hover .money{ 
+    display:inline-block; 
+}
+
+.post-body{ 
+    margin-top:12px; 
+}
+.post-body .text{ 
+    font-size:16px; 
+    line-height:1.6; 
+}
+.photo-pair{ 
+    margin-top:12px; 
+}
+.frame{ 
+    display:inline-block; 
+    width:49%; 
+    vertical-align:top;
+}
+.frame img{ 
+    width:100%; 
+    border-radius:10px; 
+    display:block;
+}
+.comments{ 
+    margin-top:40px;
+}
+.comment{ 
+    margin-top:14px; 
+}
+.comment .avatar{ 
+    width:32px; height:32px; 
+}
+.bubble{
+  display:inline-block; 
+  vertical-align:top; 
+  margin-left:10px;
+  max-width:800px; 
+  background:#fff; 
+  border:1px solid #e8e8e8;
+  border-radius:10px; 
+  padding:10px 12px;
+  margin-bottom: 8px;
+}
+.row{ 
+    font-size:13px; 
+    margin-bottom:4px; 
+}
+.user{ 
+    font-weight:800; 
+    margin-right:8px; 
+}
+.time{ 
+    color:#888;
+ }
+.reply .bubble{ 
+    background:#f4f9ff; 
+    border-color:#cfe3ff; 
+}   
+.compose{ 
+    background:#fff; 
+    border:1px solid #e5e5e5; 
+    border-radius:12px; 
+    padding:10px; margin-top:16px;
+}
+.fake-input{
+  display:inline-block; 
+  vertical-align:top; 
+  margin-left:10px;
+  width:640px; 
+  height:36px; 
+  border:1px solid #ddd; 
+  border-radius:8px;
+  padding:0 10px; 
+  font-size:14px; 
+  outline:none;
+}
+.fake-input:focus{ 
+    border-color:#aaa; 
+}
+.send{
+  display:inline-block; 
+  vertical-align:top; 
+  margin-left:10px;
+  height:36px; 
+  line-height:36px; 
+  padding:0 14px; 
+  border-radius:8px;
+  background:#111; 
+  color:#fff; 
+  text-decoration:none; 
+  font-weight:700;
+}
+.send:hover{ 
+    background:#444;
+}
+
