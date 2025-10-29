@@ -1,0 +1,49 @@
+body{
+    background-color: pink;
+}
+.box{
+  background-color: lightblue;
+  width: 100px; height: 50px;
+  text-align: center;
+  transform: rotate(20deg);
+  /*transform background-color: 5s ease-in;*/
+  transition: all 5s ease-in;
+}
+p{/*translate(100px)*/
+    transition: transform 1s linear;
+}
+.box2{
+    background-color: lightblue;
+  width: 200px; height: 50px;
+  text-align: center;
+  transform: translate(100px);
+}
+.word{
+    display: inline-block;
+transform: rotate(360deg);
+transition: transform is 1s linear;
+}
+p:hover{
+    transform: scale(4);
+}
+.box3{
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    background-color: blueviolet;
+}
+
+@keyframes sink { /* defining sink animation here */
+  from { 
+    transform: translateY(0); 
+    }
+  to   {
+     transform: translateY(-20px); 
+    }
+}
+
+.box3:nth-child(4){
+    color: lime;
+    /* using the sink animation that is defined above */
+    animation: sink 2s ease-in infinite alternate;
+}
