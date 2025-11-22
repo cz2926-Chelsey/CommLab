@@ -2,14 +2,6 @@ let sky = document.querySelector("#sky");
 let puddle = document.querySelector("#puddle");
 let lastSecond = 0;
 
-// sounds
-let dropSound = document.createElement("audio");
-dropSound.src = "waterdrop.WAV";
-dropSound.preload = "auto";
-
-let resetSound = document.createElement("audio");
-resetSound.src = "drinkwater.WAV";
-resetSound.preload = "auto";
 
 function updateClock() {
   let now = new Date();
@@ -27,8 +19,6 @@ function updateClock() {
 function createDrop(second) {
   let drop = document.createElement("div");
   drop.classList.add("drop");
-  dropSound.currentTime = 0;
-  dropSound.play();
 
 
   let randomX = Math.random() * 100;     
@@ -51,8 +41,6 @@ function createDrop(second) {
 function updatePuddle(second) {
   if (second === 0) {
     return;
-    resetSound.currentTime = 0;
-    resetSound.play();
   }
 
   let newWidth = 10 + (second / 59) * 70;   // 10 ~ 80
@@ -73,27 +61,3 @@ setInterval(function() {
   updateClock(); 
 }, 200); 
 
-
-let started = false;
-
-function startRain() {
-  if (started) return;
-  started = true;
-
-  dropSound.play().then(() => {
-    dropSound.pause();
-    dropSound.currentTime = 0;
-  });
-
-  resetSound.play().then(() => {
-    resetSound.pause();
-    resetSound.currentTime = 0;
-  });
-
-   updateClock();
-  setInterval(updateClock, 200);
-
-  document.removeEventListener("click", startRain);
-}
-
-document.addEventListener("click", startRain);
