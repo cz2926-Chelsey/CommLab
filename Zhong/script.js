@@ -3,14 +3,18 @@ let puddle = document.querySelector("#puddle");
 let lastSecond = 0;
 
 
-function updateClock() {
-  let now = new Date();
-  let s = now.getSeconds();  // 0–59
 
+function getTime() {
+  let now = new Date(); 
+
+  let h = now.getHours();      // 0–23
+  let m = now.getMinutes();    // 0–59
+  let s = now.getSeconds();    // 0–59
+
+console.log(h, m, s);
 
   if (s !== lastSecond) {   // true if x is *not* equal to lastSecond
     createDrop(s);
-    updatePuddle(s);
     lastSecond = s;  // 记住了如果没有这个部分，那么每次条件都会为真，同一秒内会有n滴雨
   }
 }
@@ -36,12 +40,7 @@ function createDrop(second) {
   setTimeout(function () {   // 1 秒后移除这滴雨
     drop.remove();
   }, 950);
-}
 
-function updatePuddle(second) {
-  if (second === 0) {
-    return;
-  }
 
   let newWidth = 10 + (second / 59) * 70;   // 10 ~ 80
   let newHeight = 5 + (second / 59) * 10;   // 5 ~ 15
@@ -52,12 +51,5 @@ function updatePuddle(second) {
   puddle.style.opacity = newOpacity.toString();
 }
 
-// 每秒检查一次
-// setInterval(updateClock, 200);
-// updateClock();
-
-setInterval(function() {
-  console.log("tick"); 
-  updateClock(); 
-}, 200); 
-
+setInterval(getTime, 1000);
+getTime();
