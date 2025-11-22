@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  background-color: black;
+  height: 100vh;
+}
+
+#sky {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(
+    circle at top, 
+    #222244 0%,
+    #050512 60%, 
+    #020209 100%);
+}
+
+#puddle {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 10vw;             /* 初始很小 */
+  height: 5vh;
+  transform: translateX(-50%);
+  border-radius: 50% 50% 0 0;
+  background: radial-gradient(circle at top, #6cc9ff 0%, #135a7a 60%, #021622 100%);
+  opacity: 0.7;
+  transition: width 0.4s ease-out, height 0.4s ease-out, opacity 0.4s ease-out;
+  box-shadow: 0 0 30px rgba(60, 150, 200, 0.7);
+}
+
+
+.drop {
+  position: absolute;
+  top: -10vh;              /* 从屏幕上方外面开始 */
+  width: 4px;
+  height: 18px;
+  border-radius: 50px;
+  background: #7ad0ff;
+  opacity: 0.9;
+  transform: translateY(0);
+  transition: transform 0.9s linear, opacity 0.9s linear;
+  pointer-events: none;
+}
