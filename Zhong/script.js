@@ -19,6 +19,7 @@ console.log(h, m, s);
 
   if (s !== lastSecond) {   // true if x is *not* equal to lastSecond
     createDrop(s);
+    lastSecond = s; 
   }
   if (s == 0) {
     drink.play();
@@ -31,7 +32,7 @@ function createDrop(one) {
   drop.classList.add("drop");
   water.play();
 
-
+  
   let randomX = Math.random() * 100;
   drop.style.left = randomX + "vw";
 
@@ -49,7 +50,7 @@ function createDrop(one) {
   }, 950);
 
 
-  let newWidth = 10 + (one / 59) * 70;   // 10 ~ 80
+  let newWidth = 5 + (one / 59) * 95;   // 10 ~ 80
   let newHeight = 5 + (one / 59) * 10;   // 5 ~ 15
   let newOpacity = 0.6 + (one / 59) * 0.3; // 0.6 ~ 0.9
 

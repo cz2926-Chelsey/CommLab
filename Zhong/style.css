@@ -18,8 +18,7 @@ body {
 #puddle {
   position: absolute;
   left: 50%;
-  bottom: 0;
-  width: 10vw;             /* 初始很小 */
+  bottom: 0;         
   height: 5vh;
   transform: translateX(-50%);
   border-radius: 50% 50% 0 0;
@@ -37,8 +36,6 @@ body {
   height: 18px;
   border-radius: 50px;
   background: #7ad0ff;
-  opacity: 0.9;
-  transform: translateY(0);
   transition: transform 0.9s linear, opacity 0.9s linear;
   pointer-events: none;
 }
