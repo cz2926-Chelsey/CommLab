@@ -2,6 +2,10 @@ let sky = document.querySelector("#sky");
 let puddle = document.querySelector("#puddle");
 let lastSecond = 0;
 
+let water = document.createElement("audio");
+let drink = document.createElement("audio");
+water.src = "waterdrop.WAV";
+drink.src = "drinkwater.WAV";
 
 
 function getTime() {
@@ -15,17 +19,20 @@ console.log(h, m, s);
 
   if (s !== lastSecond) {   // true if x is *not* equal to lastSecond
     createDrop(s);
-    lastSecond = s;  // 记住了如果没有这个部分，那么每次条件都会为真，同一秒内会有n滴雨
   }
+  if (s == 0) {
+    drink.play();
+}
 }
 
 
-function createDrop(second) {
+function createDrop(one) {
   let drop = document.createElement("div");
   drop.classList.add("drop");
+  water.play();
 
 
-  let randomX = Math.random() * 100;     
+  let randomX = Math.random() * 100;
   drop.style.left = randomX + "vw";
 
   sky.appendChild(drop);
@@ -42,14 +49,15 @@ function createDrop(second) {
   }, 950);
 
 
-  let newWidth = 10 + (second / 59) * 70;   // 10 ~ 80
-  let newHeight = 5 + (second / 59) * 10;   // 5 ~ 15
-  let newOpacity = 0.6 + (second / 59) * 0.3; // 0.6 ~ 0.9
+  let newWidth = 10 + (one / 59) * 70;   // 10 ~ 80
+  let newHeight = 5 + (one / 59) * 10;   // 5 ~ 15
+  let newOpacity = 0.6 + (one / 59) * 0.3; // 0.6 ~ 0.9
 
   puddle.style.width = newWidth + "vw";
   puddle.style.height = newHeight + "vh";
-  puddle.style.opacity = newOpacity.toString();
+  puddle.style.opacity = newOpacity;
 }
+
 
 setInterval(getTime, 1000);
 getTime();
