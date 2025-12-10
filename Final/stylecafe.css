@@ -1,0 +1,101 @@
+body {
+    color: #e8f8f1;
+    font-family: "Chalkduster", "Bradley Hand", "Comic Sans MS", cursive;
+    padding: 60px;
+    margin: 0;
+    background: #0b1a14;
+    text-align: center;
+    margin-left: 24%;
+    /* animation: bgshake 0.2s infinite; */
+}
+
+#intro {
+    max-width: 600px;
+    font-size: 1.4rem;
+    opacity: 0.8;
+    line-height: 2.2rem;
+    /* transition: opacity 1s ease; */
+}
+
+#Area {
+    font-size: 2rem;
+}
+
+#triggerBtn {
+    position: absolute;
+    margin-left: 15%;
+    font-size: 3rem;
+    color: #ff3b3b;
+    cursor: pointer;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin-top: 90px;
+    text-shadow: 0 0 10px #870101;
+    transition: transform 0.2s ease;
+}
+
+#triggerBtn:hover {
+    transform: scale(1.2);
+}
+
+.cafeword {
+    font-style: italic;
+    display: inline-block;
+    transform: rotate(-4deg);
+    opacity: 0.9;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: 1030px;
+}
+
+a {
+    color: aliceblue;
+}
+
+.cafeword:hover {
+    color: #ff1a1a;
+    text-shadow: 0 0 6px rgba(255, 0, 0, 0.6);
+    transition: all 0.4s ease;
+}
+
+.eye {
+    position: absolute;
+    color: #ff1b1b;
+    font-size: 2.2rem;
+    color: #ff1b1b;
+    text-shadow: 0 0 12px #ff0000;
+    animation: pulse 1.5s infinite;
+}
+
+.soundone {
+    color: #5f300c;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.soundtwo {
+    color: #5f300c;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.soundthree {
+    color: #5f300c;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.3);
+    }
+}

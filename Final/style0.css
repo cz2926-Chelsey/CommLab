@@ -1,0 +1,45 @@
+body {
+    margin-top: 300px;
+    background: black;
+    font-family: "Chalkduster", "Bradley Hand", "Comic Sans MS", cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.glow {
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 70%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: blur(40px);
+    pointer-events: none;
+}
+
+.text {
+    color: rgb(75, 93, 106);
+    font-size: 22px;
+    opacity: 0;
+    animation: fadeIn 5s forwards;
+    line-height: 1.7;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.link {
+    position: relative;
+    top: 60%;
+    margin-left: 38%;
+    color: rgb(11, 73, 127);
+    animation: fadeIn 15s forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}

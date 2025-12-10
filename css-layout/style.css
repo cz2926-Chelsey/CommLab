@@ -1,0 +1,39 @@
+body{
+    background-color: rgb(50, 61, 121);
+}
+.box{
+    width: 300px;
+    /height: 100px; */
+    outline: 2px solid white;
+    padding: 10px;
+    margin: 20px;
+    background-color: aliceblue;
+}
+#one{
+    /*display: none;*/
+    /*visibility: hidden;*/
+    position:relative
+    top: 0x;
+    left: 20px;
+}
+#one span{
+    position: relative;
+    top: -6px;
+    left: 2px;
+}
+#two:hover{
+    visibility: hidden;
+}
+#three{
+    position: fixed;
+    bottom:0px
+    right:0px
+}
+#four{
+    height: 4000px;
+}
+#five{
+    position: sticky;
+    top: 0px;
+    left: 0px;
+}

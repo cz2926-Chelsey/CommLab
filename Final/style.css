@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: radial-gradient(circle at top, #2a2523 0%, #120f0e 45%, #050303 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wall {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    justify-content: space-around;
+}
+.why {
+    position: relative;
+    text-decoration: none;
+    font-family: "Chalkduster", "Bradley Hand", "Comic Sans MS", cursive;
+    font-size: clamp(3rem, 7vw, 5rem);
+    letter-spacing: 0.25em;
+    color: #ff3a3a; 
+    opacity:0;
+    filter: blur(6px);
+    transition: opacity 1.5s ease, filter 1.5s ease, transform 1.5s ease;
+}
+.why.show{
+    opacity: 1;
+    filter: blur(0);
+}
+.one {
+    transform: rotate(-6deg) translateY(-10px);
+    animation: jump-shaking 0.83s infinite;
+}
+.two {
+    transform: rotate(2deg);
+}
+.three {
+    transform: rotate(7deg) translateY(8px);
+}
+
+@keyframes jump-shaking {
+  0% { transform: translateX(0) }
+  25% { transform: translateY(-9px) }
+  35% { transform: translateY(-9px) rotate(17deg) }
+  55% { transform: translateY(-9px) rotate(-17deg) }
+  65% { transform: translateY(-9px) rotate(17deg) }
+  75% { transform: translateY(-9px) rotate(-17deg) }
+  100% { transform: translateY(0) rotate(0) }
+}

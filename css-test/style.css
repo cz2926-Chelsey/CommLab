@@ -1,0 +1,48 @@
+p{
+    font-family: 'Times New Roman', Times, serif;
+}
+p{
+    background-color: pink;
+}
+.box{
+    background-color: rgb(50, 220, 220);
+    padding: 10px;
+    margin bottom: 5px;
+}
+
+#three{
+    padding: 10px;
+
+}
+
+#two{
+    border: 2px black dashed;
+}
+
+#three p{
+background-color: blueviolet;
+}
+
+#two p{
+    display: inline;
+}
+#four div{
+    display: inline;
+}
+
+#five{
+    width: 100px;
+    height: 100px;
+    margin-left: 200px;
+}
+
+.column{
+    width:30% ;
+    height: 50px;
+   display: inline-block;
+   background-color: brown;
+}
+.column:hover {
+ background-color: lemonchiffon;
+}
+

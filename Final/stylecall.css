@@ -1,0 +1,131 @@
+body {
+    margin-top: 50px;
+    margin-left: 50px;
+    background: #050814;
+    color: #f4f4f4;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+.phone{
+    margin-bottom: 50px;
+}
+.date {
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    color: #bbbbbb;
+    font-family: "Chalkduster", "Bradley Hand", "Comic Sans MS", cursive;
+}
+
+.diary {
+    font-family: "Chalkduster", "Bradley Hand", "Comic Sans MS", cursive;
+}
+.container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-left: 250px;
+    margin-top: 100px;
+}
+
+.dial {
+    background: rgba(15, 20, 40, 0.9);
+    padding: 24px 28px;
+    border-radius: 16px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+    min-width: 260px;
+}
+
+.label {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin-bottom: 8px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.show {
+    height: 40px;
+    background: #050814;
+    border-radius: 8px;
+    padding: 8px 12px;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.keypad {
+    margin-top: 16px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6px;
+}
+
+.digit{
+    display: flex;
+    background: #333;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 4px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.digit:hover {
+    background: #555;
+}
+
+.contact {
+    display: block;
+    padding: 14px 16px;
+    margin-bottom: 16px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #f4f4f4;
+    background: rgba(15, 20, 40, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    transition: 0.2s;
+}
+
+.contact:hover {
+    background: rgba(35, 50, 90, 0.95);
+    transform: translateY(-2px);
+}
+
+.name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.feeling {
+    font-size: 0.9rem; 
+    opacity: 0.85;
+}
+
+
+.hotline {
+    border-color: rgba(255, 255, 255, 0.15);
+    animation: pulse 1.8s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+
+    50% {
+        transform: translateY(-2px) scale(1.02);
+    }
+
+    100% {
+        transform: translateY(0) scale(1);
+    }
+}

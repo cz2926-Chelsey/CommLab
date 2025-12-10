@@ -1,0 +1,25 @@
+body {
+    margin-left: 40px;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black; 
+    font-family: "Chalkduster", "Bradley Hand", "Comic Sans MS", cursive;
+}
+.title {
+    font-size: 3rem;                 
+    font-weight: 600;
+    color: rgb(50, 47, 47);                  
+    margin-bottom: 20px;
+    text-shadow: 0px 0px 18px rgba(0,0,0,0.7),   
+                 0px 0px 10px rgba(255,255,255,0.6); 
+}
+#good{
+    color: rgb(223, 117, 79);
+}
+#inside{
+    margin-left: 650px;
+    text-shadow: 0px 0px 10px rgba(255,255,255,0.6); 
+}
