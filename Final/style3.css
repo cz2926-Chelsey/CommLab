@@ -48,5 +48,6 @@ span{
 }
 #one{
   color: rgb(64, 170, 135);
+  pointer-events: none;
 }
 

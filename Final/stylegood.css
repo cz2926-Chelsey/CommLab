@@ -1,0 +1,220 @@
+body {
+    margin: 60px auto 40px;
+    padding: 0;
+    min-height: 100vh;
+    color: aliceblue;
+    background: #02030a;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+    transition: background-color 1.2s ease;
+}
+
+.call-box {
+    text-align: center;
+}
+
+.number {
+    font-size: 1.2rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+.status {
+    font-size: 1.6rem;
+    text-shadow: 0 0 12px rgba(0, 0, 0, 0.8),
+        0 0 6px rgba(255, 255, 255, 0.4);
+    animation: heartbeat 1.2s ease-in-out 6 forwards;
+}
+
+.hello {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #ffddb3;
+    text-shadow: 0 0 18px rgba(255, 160, 100, 0.9),
+        0 0 8px rgba(0, 0, 0, 0.8);
+}
+
+.answer-btn {
+    padding: 10px 26px;
+    border-radius: 999px;
+    border: none;
+    background: #30b37a;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.messages {
+    max-width: 760px;
+    margin: 90px auto 80px;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+    color: #333;
+}
+
+.text1,
+.text2,
+.text3,
+.text4,
+.text5,
+.text6,
+.text7,
+.text8,
+.text9,
+.text10,
+.text11,
+.text12 {
+    position: relative;
+    max-width: 520px;
+    padding: 14px 18px 18px;
+    border-radius: 8px;
+    background: #fff9d6;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    font-size: 1.05rem;
+    line-height: 1.7;
+    box-shadow:
+        0 10px 18px rgba(0, 0, 0, 0.20),
+        0 0 1px rgba(0, 0, 0, 0.35);
+    transform-origin: top center;
+}
+
+.text1 {
+    margin-left: -50px;
+    transform: rotate(-2deg);
+}
+
+.text2 {
+    margin-left: 600px;
+    transform: rotate(6deg);
+}
+
+.text3 {
+    margin-left: -620px;
+    transform: rotate(1.5deg);
+}
+
+.text4 {
+    margin-left: 400px;
+    transform: rotate(4deg);
+}
+
+.text5 {
+    margin-left: -300px;
+    transform: rotate(-5deg);
+}
+
+.text6 {
+    margin-left: 900px;
+    transform: rotate(-1.6deg);
+}
+
+.text7 {
+    margin-left: 80px;
+    transform: rotate(-8deg);
+}
+
+.text8 {
+    margin-left: -60px;
+    transform: rotate(-15deg);
+}
+
+.text9 {
+    margin-left: -10px;
+    transform: rotate(1.2deg);
+}
+
+.text10 {
+    margin-left: 380px;
+    transform: rotate(-1.4deg);
+}
+
+.text11 {
+    margin-left: -600px;
+    transform: rotate(4deg);
+}
+
+.text12 {
+    margin-left: -45px;
+    transform: rotate(1.1deg);
+}
+
+.text1::before,
+.text2::before,
+.text3::before,
+.text4::before,
+.text5::before,
+.text6::before,
+.text7::before,
+.text8::before,
+.text9::before,
+.text10::before,
+.text11::before,
+.text12::before { /* https://www.youtube.com/watch?v=e_U7e-0d9Og */
+    content: "";
+    width: 80px;
+    height: 18px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 3px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.18);
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-2deg);
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(2px);
+}
+
+.show {
+    opacity: 1;
+    animation: shadow 0.45s ease-out;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+@keyframes shadow {
+    0% {
+        box-shadow:
+            0 4px 10px rgba(0, 0, 0, 0.10),
+            0 0 1px rgba(0, 0, 0, 0.25);
+    }
+
+    60% {
+        box-shadow:
+            0 16px 26px rgba(0, 0, 0, 0.32),
+            0 0 1px rgba(0, 0, 0, 0.4);
+    }
+
+    100% {
+        box-shadow:
+            0 10px 18px rgba(0, 0, 0, 0.20),
+            0 0 1px rgba(0, 0, 0, 0.35);
+    }
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(1.12);
+    }
+
+    40% {
+        transform: scale(0.97);
+    }
+
+    60% {
+        transform: scale(1.08);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
