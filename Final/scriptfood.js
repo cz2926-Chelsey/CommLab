@@ -2,7 +2,7 @@ let foods = document.querySelectorAll(".food");
 let bgm = document.querySelector("#bgm");
 let bite = document.querySelector("#bite");
 let back = document.querySelector("#backLink");
-let eatCount = 0;
+let eatNumber = 0;
 
 
 foods.forEach(function (food) {
@@ -25,8 +25,8 @@ foods.forEach(function (food) {
         if (lastLetter) {
             lastLetter.remove();
         }
-        eatCount = eatCount + 1;
-        if (eatCount >= 13) {
+        eatNumber = eatNumber + 1;
+        if (eatNumber >= 13) {
             back.style.opacity = 1;
             back.style.pointerEvents = "auto";
         }
