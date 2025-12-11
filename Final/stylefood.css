@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: #f6f0d8;  
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.food-box {
+    width: 70%;
+    max-width: 480px;
+    min-height: 260px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+.food {
+    position: absolute;
+    cursor: pointer;
+    font-size:xx-large;
+    color: rgb(244, 159, 1);
+    animation: Bounce 0.9s ease-in-out infinite alternate;
+}
+
+.food span {
+    display: inline-block;
+    transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.food:hover span {
+    transform: translateY(-2px);
+}
+
+#backLink {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #b31d6d;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.6s ease;
+    font-size: xx-large;
+}
+@keyframes Bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-8px);  
+    }
+}
