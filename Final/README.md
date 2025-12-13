@@ -20,3 +20,4 @@ By deliberately removing images, the work responds to the abstract nature of psy
 
 Use headphones for the best experience.  
 Move slowly. Listen carefully.
+👉 **[View the Project](https://cz2926-chelsey.github.io/CommLab/Final/)**  
