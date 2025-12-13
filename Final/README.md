@@ -2,10 +2,9 @@
 
 ### *A text-and-sound diary about memory, judgment, and resilience*
 
-### 👩‍💻 Web Designer  
-**Chelsey Zhong**
-
 **Diary of a Normal Day** is an interactive web diary that records experiences from a student who has been dealing with schooll bullying over a period of time.
+
+### 👩‍💻 Web Designer  **Chelsey Zhong**
 
 ---
 
