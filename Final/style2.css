@@ -97,13 +97,3 @@
     75%  { transform: translate(-150px, 140px) rotate(6deg); }
     100% { transform: translate(-200px, -80px) rotate(-5deg); }
 }
-/* @keyframes flickerAnimation {
-  0%   { opacity:1; }
-  50%  { opacity:0; }
-  100% { opacity:1; }
-} */
-/* 
-@keyframes float {
-  from { transform: translateY(0); }
-  to   { transform: translateY(-20px); }
-} */

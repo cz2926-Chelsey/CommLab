@@ -4,11 +4,11 @@ cafeword.addEventListener("mouseover", function () {
     cafeword.innerText = "No way!";
 });
 
-let btn = document.querySelector("#triggerBtn");
+let stop = document.querySelector("#triggerBtn");
 let area = document.querySelector("#Area");
 let eyeSound = document.querySelector("#eyeSound");
 
-btn.addEventListener("click", function () {
+stop.addEventListener("click", function () {
 
     let eyes = document.createElement("span");
     eyes.textContent = "eye";
@@ -25,13 +25,10 @@ btn.addEventListener("click", function () {
     eyeSound.play();
 
     sound1.pause();
-    // sound1.currentTime = 0;
 
     sound2.pause();
-    // sound2.currentTime = 0;
 
     sound3.pause();
-    // sound3.currentTime = 0;
 
 });
 
