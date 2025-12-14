@@ -4,7 +4,7 @@ let bellSound = document.querySelector("#bellSound");
 
 if (ringWord && bellSound) {
     ringWord.addEventListener("click", function () {
-        bellSound.currentTime = 0; 
+        bellSound.currentTime = 0;
         bellSound.play();
     });
 }

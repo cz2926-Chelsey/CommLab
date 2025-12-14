@@ -6,7 +6,6 @@ body {
     background: #0b1a14;
     text-align: center;
     margin-left: 24%;
-    /* animation: bgshake 0.2s infinite; */
 }
 
 #intro {
@@ -14,7 +13,6 @@ body {
     font-size: 1.4rem;
     opacity: 0.8;
     line-height: 2.2rem;
-    /* transition: opacity 1s ease; */
 }
 
 #Area {
